@@ -1,0 +1,34 @@
+.welcome {
+    margin-top: 150px;
+}
+
+.homepage-image {
+    height: 60vh;
+}
+
+.homepage-segment {
+    margin-top: 100px;
+    height: auto;
+}
+
+.homepage-segment-last {
+    margin-top: 180px;
+    height: auto;
+    margin-bottom: 200px;
+}
+
+.homepage-offer {
+    display: flex;
+    flex-direction: row;
+}
+
+.homepage-carousel-title {
+    color: white;
+}
+
+.carousel-item{
+    transition: -webkit-transform .6s ease;
+    transition: transform .6s ease;
+    transition: transform .6s ease,-webkit-transform .6s ease;
+} 
+

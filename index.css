@@ -1,0 +1,77 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* headings, font family is poppins */
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+img {
+    width: 100%;
+}
+
+.title {
+    font-family: Poppins;
+    font-weight: 500;
+    letter-spacing:2px;
+}
+
+footer {
+
+    background-color: #c5cbe3;
+}
+
+.navbar {
+    background-color: #c5cbe3 !important;
+}
+
+.navbar-nav {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.nav-item {
+    color: white !important;
+    font-family: Poppins;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    
+}
+
+.nav-item:hover {
+    color: white !important;
+    font-family: Poppins;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-bottom: 3px solid #4056a1;
+} 
+
+.button-book {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    width: 10rem;
+    height: 2.5rem;
+    background-color: #f13c20;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.button-book:hover {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    width: 10rem;
+    height: 2.5rem;
+    background-color: #008000;
+    color: white;
+    border: none;
+    border-radius: 10px;
+}

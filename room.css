@@ -1,0 +1,50 @@
+.welcome {
+    margin-top: 100px;
+}
+
+.room-image {
+    height: 60vh;
+}
+
+.room-segment {
+    /* margin-top: 200px; */
+    height: auto;
+}
+
+.room-segment-last {
+    margin-top: 180px;
+    height: 70vh;
+    margin-bottom: 200px;
+}
+
+
+.room-carousel-title {
+    color: white;
+}
+
+.carousel-item {
+    transition: -webkit-transform 0.5s ease;
+    transition: transform 0.5s ease;
+    transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+    -webkit-backface-visibility: visible;
+    backface-visibility: visible;
+  }
+
+  .display-4 {
+    font-size: 200%;
+}
+
+[class*="col-"] {
+    padding: 1rem;
+}
+
+.welcome {
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 2rem;
+}
+
+.homepage-segment {
+    /* margin-top: 200px; */
+    height: 70vh;
+}

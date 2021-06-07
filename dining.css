@@ -1,0 +1,74 @@
+.welcome {
+    margin-top: 50px;
+}
+
+.dining-image {
+    height: 60vh;
+}
+
+.box_container{
+    width: 1000px;
+    margin: auto;
+}
+
+.dining-segment-last {
+    
+    margin-top: 200px;
+    height: auto;
+    margin-bottom: 200px;
+}
+
+.dining-carousel-title {
+    
+    color: goldenrod;
+}
+
+.carousel-item{
+    transition: -webkit-transform .6s ease;
+    transition: transform .6s ease;
+    transition: transform .6s ease,-webkit-transform .6s ease;
+} 
+
+
+.box h2{
+    background-color:gainsboro;
+    border: 3px solid goldenrod;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 20px 0;
+}
+.box { 
+    background-color:rgb(255, 250, 250);
+    border: 3px solid goldenrod;
+    border-radius: 15px;
+    padding: 5px;
+    margin: 10px 0;
+}
+.box img{
+    border-radius: 15px;
+    border:3px solid goldenrod;
+}
+.welcome-container{
+    margin-bottom: 10%;
+    text-align: center;
+}
+
+/*---Media Queries --*/
+@media (max-width: 992px) {
+
+}
+
+@media (max-width: 768px) {
+    .box_container{
+        width: 668px;
+        margin: auto;
+    }
+    }
+
+@media (max-width: 576px) {
+
+     .box_container{
+        width: 476px;
+        margin: auto;
+    }
+}
