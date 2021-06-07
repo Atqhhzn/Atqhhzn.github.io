@@ -1,5 +1,6 @@
 <?php
     $FullName = $_POST['FullName'];
+    $Hotel = $_POST['Hotel'];
     $Hall = $_POST['Hall'];
     $Date = $_POST['Date'];
     $Package = $_POST['Package'];
@@ -19,9 +20,9 @@
         die("Connection failed: " . $conn->connect_error);
     }
     else{
-        $stmt = $conn->prepare("insert into events_reservation(FullName, Hall, Date, Package, Email, MobileNo, Note)
-            values(?, ?, ?, ?, ?, ?, ?)");
-        $stmt->bind_param('sssssss', $FullName, $Hall, $Date, $Package, $Email, $MobileNo, $Note);
+        $stmt = $conn->prepare("insert into events_reservation(FullName, Hotel, Hall, Date, Package, Email, MobileNo, Note)
+            values(?, ?, ?, ?, ?, ?, ?, ?)");
+        $stmt->bind_param('ssssssss', $FullName, $Hotel, $Hall, $Date, $Package, $Email, $MobileNo, $Note);
         $stmt->execute();
         echo "Reservation accepted! Thank you for choosing Tasik Hotels.";
         $stmt->close();

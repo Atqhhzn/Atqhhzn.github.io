@@ -2,6 +2,7 @@
     $Address = $_POST['Address'];
     $FullName = $_POST['FullName'];
     $Hotel = $_POST['Hotel'];
+    $Type = $_POST['Type'];
     $CheckIn = $_POST['CheckIn'];
     $CheckOut = $_POST['CheckOut'];
     $NoOfRooms = $_POST['NoOfRooms'];
@@ -22,9 +23,9 @@
         die("Connection failed: " . $conn->connect_error);
     }
     else{
-        $stmt = $conn->prepare("insert into room_reservation(Address, FullName, Hotel, CheckIn, CheckOut, NoOfRooms, Adults, Children, Email, MobileNo)
-            values(?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
-        $stmt->bind_param('sssssiiiss', $Address, $FullName, $Hotel, $CheckIn, $CheckOut, $NoOfRooms, $Adults, $Children, $Email, $MobileNo);
+        $stmt = $conn->prepare("insert into room_reservation(Address, FullName, Hotel, Type, CheckIn, CheckOut, NoOfRooms, Adults, Children, Email, MobileNo)
+            values(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
+        $stmt->bind_param('ssssssiiiss', $Address, $FullName, $Hotel, $Type, $CheckIn, $CheckOut, $NoOfRooms, $Adults, $Children, $Email, $MobileNo);
         $stmt->execute();
         echo "Reservation accepted! Thank you for choosing Tasik Hotels.";
         $stmt->close();
